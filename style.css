@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Nav Bar */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 2em;
+    padding-right: 2em;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    /* border-bottom: 0.5px solid #f4f4f4;  */
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+    margin: 30px, 0;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    float: left;
+    text-decoration: none;
+    color: #313131;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #0678A9;
+}
+
+.hero-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 100%;
+    height: 600px;
+    background-color: #CCCCFF;
+    /* color: white; */
+}
+
+.tagline {
+    font-size: 50px;
+    margin-left: 200px;
+}
+
+.browse {
+    margin-left: 200px;
+    margin-top: 30px;
+    background-color: #FFBF00;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    border: none;
+}
+
+
+/* Trending Books section */
+.book-img {
+    width: 200px;
+    height: 300px;
+    left: 50px;
+}
+
+/* Featured Books section */
+.hero-section {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(217, 217, 217, 0.5);
+    border-top: #d9d9d9 1px solid;
+    border-bottom: #d9d9d9 1px solid;
+}
+.section-title {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.desc {
+    display: inline-block;
+    padding: 20px;
+    width: auto;
+}
+.p-desc {
+    font-size: 14px;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+ul li a {
+    float: left;
+    text-decoration: none;
+    color: #313131;
+    font-size: 16px;
+}
+
+/* FOOTER */
+.footer {
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+}
+
+.footer img {
+    padding: 20px;
+}
+
+.followus {
+    color: #fff;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+  
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+  
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
