@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Project 1: Responsive Design</title>
+    <link rel="stylesheet" href="test.css">
+    
+    <!--VIEWPORT META FOR PAGE RESPONSIVENESS-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--FONT PAGE LINK-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Press+Start+2P&display=swap');
+    </style>
+    
+</head>
+
+
+<body>
+
+  <div class="header">
+    <a href="#default" class="logo">Logo</a>
+    <div class="header-right">
+      <a class="active" href="#home">Home</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <p style="font-size:50px;color:rgb(62, 79, 139);">Patty Bactad</p>
+      <p style="font-size:20px;color:rgb(255, 255, 255);">Web Design & Developer Student</p><br><br>
+        <button class="button button1" id="myButton">Work with me</button>
+    </div>
+  </div>
+
+    <!----------GRID LAYOUT OF THE PAGE---------->
+    <main>
+      <div class="page-grid-layout">
+        <div class="box"><!--box1: short paragraph-->
+          <p class="english" style="text-align:center;">
+          Patty was an Information Security Engineer with experience of monitoring and investigating network traffic,
+          performing incident investigations like data gathering,
+          root-cause analysis or computer forensics to create evidence
+          in an event of a breach in a network.<br>
+          Her background in security incident investigation made her competent in identifying a fraudulent activity online.<br><br>
+          Patty is a multi-passionate creative, who currently explores different art mediums in creating her portfolio.<br>
+          She likes photography, doodling, painting, watching anime, travelling, & trying new foods in different places. <br>
+          Patty is also an aspiring web & graphic designer.<br>
+          </p>
+        </div>
+        <div class="box"><!--box2: school work-->
+          <p>Recent School Work</p>
+          <!----------IMAGE GALLERY---------->
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="proj1.jpeg">
+                <img src="proj1.jpeg" alt="Name Graphics">
+              </a>
+              <div class="desc">Name Graphics</div>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="proj2.jpeg">
+                <img src="proj2.jpeg" alt="User Persona & Rational">
+              </a>
+              <div class="desc">User Persona & Rational</div>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="proj3.jpeg">
+                <img src="proj3.jpeg" alt="Theme Board">
+              </a>
+              <div class="desc">Theme Board</div>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="proj4.jpeg">
+                <img src="proj4.jpeg" alt="Application Splash Banner">
+              </a>
+              <div class="desc">Application Splash Banner</div>
+            </div>
+          </div>
+          
+          <div class="clearfix"></div>
+        </div>
+          
+          
+    </main>
+
+      <footer class="footer" style="text-align:center;">
+        Copyright © 2023 Patty Bactad. All Rights Reserved.
+      </footer>
+
+    </div>
+</body>
+</html>

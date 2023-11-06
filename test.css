@@ -1,0 +1,226 @@
+/*----------NAV BAR/HEADER----------*/
+.header {
+    overflow: hidden;
+    padding: 20px 20px;
+    background: #00078b;
+  }
+  /* style of header links */
+  .header a {
+    float: left;
+    color: #92B4F4;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 3px;
+  }
+  
+  .header a.logo {
+    font-size: 16px;
+  }
+  
+  .header a:hover {
+    background-color: #E8EDF5;
+    color: #000000;
+    /*font-weight: bold;*/
+  }
+  
+  /* style of active/current link*/
+  .header a.active {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+  
+  .header-right {
+    float: right;
+  }
+  
+  /*----------PAGE RESPONSIVENESS: MOBILE VIEW----------*/
+  /* responsive style for mobile view */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+  
+  
+  
+  /*----------BODY OF THE WEBSITE----------*/
+  body {
+    font-family: Montserrat;
+    /* font-size: 14px; color: rgb(0, 0, 0); */
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0px 0px 0px 0px;
+  }
+  
+  
+  /*----------HERO----------*/
+  .hero-image {
+    background-image: url('me2.jpeg');
+    display: block;
+    background-color: #000000;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /*----------Let's connect BUTTON----------*/
+  .button {
+    border: none;
+    padding: 12px 30px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color:  #00078b;
+    color: #92B4F4; 
+  }
+  
+  .button1:hover {
+    background-color: #e1ed5c;
+    color: rgb(0, 0, 0);
+  }
+  
+  
+  
+  /*----------GRID LAYOUT OF THE PAGE----------*/
+  .grid-container {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .page-grid-layout {
+    max-width: 1536px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+    /* margin: 100px auto; */
+    /* padding: 10px; */
+    /* column-gap: 10px;
+    row-gap: 10px; */
+  }
+  
+  .box {  
+    background: rgb(179, 218, 248);
+    color: white;
+    padding: 20px 100px 20px 100px;
+    /* border: #0A369D 1px solid; */
+  }
+  
+  
+  .box:nth-of-type(1) { /*--box1: short paragraph--*/ 
+    background: rgb(179, 218, 248);
+    font-size: 14px; color: rgb(0, 0, 0);
+    text-align: left;
+    grid-column: 1/5;
+    /* background-image: url('egg.jpeg');
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; */
+  }
+  
+  .box:nth-of-type(2) { /*--box2: recent school work--*/
+    background: rgb(255, 255, 255);
+    font-size: 14px; color: rgb(0, 0, 0);
+    grid-column: 1 / 5;
+    
+  }
+  
+  .footer { /*--footer--*/
+    background: #00078b;
+    font-size: 16px; color: rgb(252, 252, 252);
+    grid-column: 1 / 5;
+    padding: 20px 200px 20px 200px;
+  }
+  
+  
+  /*----------IMAGE GALLERY----------*/
+  div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /* * {
+    box-sizing: border-box;
+  } */
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+   
+  
+  /*----------PAGE RESPONSIVENESS: MOBILE VIEW----------*/
+  /* responsive style for mobile view */
+  @media only screen and (max-width: 640px) {
+    .hero-image {
+      height: 450px;
+      padding: 0px 0px 20px 0px;
+    }
+  
+    .box, .box:nth-of-type(3), .footer {
+      float: none;
+      font-size: 12px;
+      padding: 20px ;
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
