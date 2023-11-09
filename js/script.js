@@ -156,3 +156,10 @@ featuredBookDescriptionBox.style.borderRadius = "20px";
 featuredBookDescriptionBox.style.boxShadow = "5px 5px 20px rgba(0, 0, 0, 0.2)";
 featuredBookDescriptionBox.style.gridColumn = "4 / 10";
 featuredBookDescriptionBox.style.gridRow = "2 / 3";
+
+// Style the categories links by changing their color
+const categoryLinks = featuredBookDescriptionBox.querySelectorAll("a");
+categoryLinks.forEach((link) => {
+  link.style.color = "rgb(144, 144, 144)";
+  link.style.textDecoration = "none";
+});
