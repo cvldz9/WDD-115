@@ -126,3 +126,11 @@ leftArrow.addEventListener("mouseout", () => {
 rightArrow.addEventListener("mouseout", () => {
   rightArrow.style.backgroundColor = "rgba(243, 240, 240, 0.7)";
 });
+
+// Select the featured book title box
+const featuredBookTitleBox = document.querySelector(
+  ".ftrbook-box:nth-of-type(1)"
+);
+
+// Add some padding to the title box
+featuredBookTitleBox.style.padding = "20px";
