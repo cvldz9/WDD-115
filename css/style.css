@@ -708,6 +708,19 @@ bottom: 0;
   padding: 10px;
 }
 
+.fa-pinterest {
+  background: #007bb5;
+  color: white;
+  background-size: fill;
+  color: white;
+  /* border: rgb(245, 245, 245, 0.25) .5px solid; */
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  padding: 10px;
+}
+
 .fa:hover {
   opacity: 0.7;
   text-decoration: none;
