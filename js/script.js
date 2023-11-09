@@ -1,6 +1,9 @@
 // Change Title
 document.title = "Papyrus";
 
+// Change Background Color
+document.body.style.backgroundColor = "lightgray";
+
 /*----------TRENDING BOOKS----------*/
 var trendingSlider = new Swiper(".trending-slider", {
   effect: "coverflow",
