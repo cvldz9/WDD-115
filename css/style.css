@@ -37,8 +37,9 @@ nav ul li {
 nav ul li a {
   float: left;
   text-decoration: none;
-  color: #313131;
+  /* color: #313131; */
   font-size: 16px;
+  font-weight: 600;
 }
 
 nav ul li a:hover {
