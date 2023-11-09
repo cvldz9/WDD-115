@@ -569,6 +569,23 @@ bottom: 0;
   cursor: pointer;
 }
 
+
+.container_left_button2 {
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  outline: none;
+  border: white 0.5px solid;
+  border-radius: 50px;
+  /* background-color: #ffbf00; */
+  background-color:  rgb(84, 124, 241);
+  /* color: #313131; */
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
 .container_left_h3 {
   color: #f4f4f4;
 }
