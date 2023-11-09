@@ -53,3 +53,17 @@ function previousSlide() {
 setInterval(nextSlide, 3500);
 
 showSlide(currentSlide);
+
+// Slide Arrows
+const leftArrow = document.getElementById("leftArrow");
+const rightArrow = document.getElementById("rightArrow");
+
+leftArrow.addEventListener("click", () => {
+  previousSlide();
+});
+
+rightArrow.addEventListener("click", () => {
+  nextSlide();
+});
+
+// End Hero Slider
