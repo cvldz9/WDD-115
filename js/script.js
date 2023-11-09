@@ -162,4 +162,14 @@ const categoryLinks = featuredBookDescriptionBox.querySelectorAll("a");
 categoryLinks.forEach((link) => {
   link.style.color = "rgb(144, 144, 144)";
   link.style.textDecoration = "none";
+
+  link.addEventListener("mouseover", () => {
+    link.style.color = "rgb(0, 162, 255)";
+    link.style.textDecoration = "underline";
+  });
+
+  link.addEventListener("mouseout", () => {
+    link.style.color = "rgb(144, 144, 144)";
+    link.style.textDecoration = "none";
+  });
 });
