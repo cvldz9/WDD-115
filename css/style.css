@@ -55,6 +55,7 @@ body {
 }
 
 /*----------HERO BANNER----------*/
+/** Hero Slider **/
 .hero-image {
   display: flex;
   flex-direction: column;
@@ -62,12 +63,86 @@ body {
   align-items: left;
   width: 100%;
   height: 700px;
-  background-image: url("./../assets/images/hero/Hero-bg.png");
+  /* background-image: url("./../assets/images/hero/Hero-bg.png"); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  /* color: white; */
 }
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.active {
+  display: block;
+}
+
+/* Add styles for slide-text and slide-tagline */
+.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  /* Center-align the text */
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  /* Semi-transparent background */
+  padding: 20px;
+  /* Add padding for readability */
+  border-radius: 5px;
+  /* Add rounded corners */
+}
+
+.slide-tagline {
+  font-size: 24px;
+  margin: 0;
+  font-style: italic;
+  /* Add italic style for quotes */
+}
+
+/* Style for the slide arrows */
+.slide-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background: rgba(243, 240, 240, 0.7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  /* Add a subtle shadow */
+}
+
+.left-arrow {
+  left: 20px;
+}
+
+.right-arrow {
+  right: 20px;
+}
+
+/** End Hero Slider **/
 
 .tagline {
   font-size: 50px;
