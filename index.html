@@ -1,391 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WDDM 115: Group 2</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-        <link rel="stylesheet" href="./css/style.css">
 
-        <!--FONT PAGE LINKS-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Imbue:opsz@10..100&family=Montserrat:wght@300&family=Press+Start+2P&display=swap" rel="stylesheet">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Imbue:opsz@10..100&family=Montserrat:wght@300&family=Press+Start+2P&display=swap');
-        </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDDM 115: Group 2</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/style.css">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
-        </style>
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    </head>
+  <!--FONT PAGE LINKS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Imbue:opsz@10..100&family=Montserrat:wght@300&family=Press+Start+2P&display=swap"
+    rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Imbue:opsz@10..100&family=Montserrat:wght@300&family=Press+Start+2P&display=swap');
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+    rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+    rel="stylesheet">
+</head>
 
 
 
 
-    <body>
-        <div class="container">
-            <!-------------------------NAV BAR----------------------------->
-            <div class="navbar">
-                <img src="./assets/images/logo/logo1-black1.png" width="140" height="65"/>
-                <nav>
-                    <ul id="menuList">
-                        <li><a href="">Collections</a></li>
-                        <li><a href="">Audiobooks</a></li>
-                        <li><a href="">Sign Up</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <!-------------------------HERO BANNER----------------------------->
-            <div class="hero-image">
-                <div class="hero-text">
-                  <p class="tagline">Life is too boring <br>to read a <br> bad book.</p><br>
-                  <button type="button" class="browse">Browse Collection</button>
-                </div>
-            </div>
-            <!-------------------------TRENDING BOOKS----------------------------->
-            <section id="trending">
-                <div class="trend-container">
-                  <h1 class="section-heading">Trending Books</h1>
-                </div>
-                <div class="trend-container">
-                  <div class="swiper trending-slider">
-                    <div class="swiper-wrapper">
-                      <!-- Slider1 -->
-                      <div class="swiper-slide trending-slide">
-                        <div class="trending-slide-img">
-                        <img src="./assets/images/slider/slider-book1.jpeg" alt="book1">
-                        </div>
-                        <div class="trending-slide-content">
-                          <h1 class="book-title">Where I Live</h1>
-                          <div class="trending-slide-content-bottom">
-                            <h2 class="author">Brenda Rufener</h2>
-                              <h3 class="book-rating">
-                              <span>4.5</span>
-                                <div class="rating">
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                </div>
-                              </h3>
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <!-- Slider2 -->
-                      <div class="swiper-slide trending-slide">
-                        <div class="trending-slide-img">
-                        <img src="./assets/images/slider/slider-book2.jpeg" alt="book2">
-                        </div>
-                        <div class="trending-slide-content">
-                          <h1 class="book-title">Vanished</h1>
-                            <div class="trending-slide-content-bottom">
-                              <h2 class="author">Sheela Chari</h2>
-                              <h3 class="book-rating">
-                                <span>4.5</span>
-                                <div class="rating">
-                                  <ion-icon name="star"></ion-icon>
-                                  <ion-icon name="star"></ion-icon>
-                                  <ion-icon name="star"></ion-icon>
-                                  <ion-icon name="star"></ion-icon>
-                                  <ion-icon name="star"></ion-icon>
-                                </div>
-                              </h3>
-                            </div>
-                        </div>
-                      </div>
-                 
-                    <!-- Slider3 -->
-                    <div class="swiper-slide trending-slide">
-                      <div class="trending-slide-img">
-                      <img src="./assets/images/slider/slider-book3.jpeg" alt="book3">
-                      </div>
-                      <div class="trending-slide-content">
-                        <h1 class="book-title">The Midnight Library</h1>
-                        <div class="trending-slide-content-bottom">
-                          <h2 class="author">Matt Haig</h2>
-                          <h3 class="book-rating">
-                            <span>4.5</span>
-                            <div class="rating">
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                            </div>
-                          </h3>
-                        </div>
-                      </div>
-                    </div>
-                   
-                    <!-- Slider4 -->
-                    <div class="swiper-slide trending-slide">
-                      <div class="trending-slide-img">
-                      <img src="./assets/images/slider/slider-book4.jpeg" alt="book4">
-                      </div>
-                        <div class="trending-slide-content">
-                          <h1 class="book-title">Five Feet Apart</h1>
-                          <div class="trending-slide-content-bottom">
-                            <h2 class="author">Rachel Lippincott</h2>
-                            <h3 class="book-rating">
-                              <span>4.5</span>
-                              <div class="rating">
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                              </div>
-                            </h3>
-                          </div>
-                        </div>
-                    </div>
-                  
-                    <!-- Slider5 -->
-                    <div class="swiper-slide trending-slide">
-                      <div class="trending-slide-img">
-                      <img src="./assets/images/slider/slider-book5.jpeg" alt="book5">
-                      </div>
-                      <div class="trending-slide-content">
-                        <h1 class="book-title">They Both Die At The End</h1>
-                        <div class="trending-slide-content-bottom">
-                          <h2 class="author">Adam Silvera</h2>
-                          <h3 class="book-rating">
-                            <span>4.5</span>
-                            <div class="rating">
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                            </div>
-                          </h3>
-                        </div>
-                      </div>
-                    </div>
-                   
-                    <!-- Slider6 -->
-                    <div class="swiper-slide trending-slide">
-                      <div class="trending-slide-img">
-                      <img src="./assets/images/slider/slider-book6.jpeg" alt="book6">
-                      </div>
-                      <div class="trending-slide-content">
-                        <h1 class="book-title">Catch In The Rye</h1>
-                        <div class="trending-slide-content-bottom">
-                          <h2 class="author">J.D. Salinger</h2>
-                          <h3 class="book-rating">
-                            <span>4.5</span>
-                            <div class="rating">
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                            </div>
-                          </h3>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <!-- Slider7 -->
-                    <div class="swiper-slide trending-slide">
-                      <div class="trending-slide-img">
-                      <img src="./assets/images/slider/slider-book7.jpeg" alt="book7">
-                      </div>
-                      <div class="trending-slide-content">
-                        <h1 class="book-title">I'm The King Of The Castle</h1>
-                        <div class="trending-slide-content-bottom">
-                          <h2 class="author">Susan Hill</h2>
-                          <h3 class="book-rating">
-                            <span>4.5</span>
-                            <div class="rating">
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                            </div>
-                          </h3>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End of Slider -->
-                    </div>
-            
-            
-                    <div class="trending-slider-control">
-                      <div class="swiper-button-prev slider-arrow">
-                        <ion-icon name="arrow-back-outline"></ion-icon>
-                      </div>
-                      <div class="swiper-button-next slider-arrow">
-                        <ion-icon name="arrow-forward-outline"></ion-icon>
-                      </div>
-                      <div class="swiper-pagination"></div>
-                    </div>
-            
-            
-                  </div>
-                </div>
-              </section>
-            
-              <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-              <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-              <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-              <script src="./js/script.js"></script>
-            
-            <!-------------------------FEATURED BOOK----------------------------->
-            <div class="ftr-book-container">
-              <!--box1: featured book title-->
-              <div class="ftrbook-box">
-                  <p class="english" style="text-align:center;">
-                      Featured Book of November
-                  </p>
+<body>
+  <div class="container">
+    <!-------------------------NAV BAR----------------------------->
+    <div class="navbar">
+      <img src="./assets/images/logo/logo1-black1.png" width="140"
+        height="65" />
+      <nav>
+        <ul id="menuList">
+          <li><a href="">Collections</a></li>
+          <li><a href="">Audiobooks</a></li>
+          <li><a href="">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-------------------------HERO BANNER----------------------------->
+    <div class="hero-image">
+      <div class="hero-text">
+        <p class="tagline">Life is too boring <br>to read a <br> bad book.</p>
+        <br>
+        <button type="button" class="browse">Browse Collection</button>
+      </div>
+    </div>
+    <!-------------------------TRENDING BOOKS----------------------------->
+    <section id="trending">
+      <div class="trend-container">
+        <h1 class="section-heading">Trending Books</h1>
+      </div>
+      <div class="trend-container">
+        <div class="swiper trending-slider">
+          <div class="swiper-wrapper">
+            <!-- Slider1 -->
+            <div class="swiper-slide trending-slide">
+              <div class="trending-slide-img">
+                <img src="./assets/images/slider/slider-book1.jpeg" alt="book1">
               </div>
-              <!--box2: image of book-->
-              <div class="ftrbook-box">
-                  <img src="./assets/images/featured/ftr-book.jpeg" width="300" height="400" style="border-radius: 20px;"/>
+              <div class="trending-slide-content">
+                <h1 class="book-title">Where I Live</h1>
+                <div class="trending-slide-content-bottom">
+                  <h2 class="author">Brenda Rufener</h2>
+                  <h3 class="book-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
               </div>
-              <!--box3: book title, author and description-->
-              <div class="ftrbook-box">
-                <p class="ftrbook-title" style="font-size: 24px; font-weight: bold;">The Last of August</p>
-                    <p class="ftrbook-author" style="font-style: italic; font-weight: bold;">By Brittany Cavallaro</p><br>
-                      <p class="feedback-text"><img src="./assets/images/icons/star.png" alt="star" width="14" height="14" />   4.3k Ratings</p> 
-                      <p class="feedback-text"><img src="./assets/images/icons/eye.png" alt="star" width="14" height="14" />   37k Reads</p> 
-                      <p class="feedback-text"><img src="./assets/images/icons/person.png" alt="star" width="14" height="14" />   21k Reviews</p><br>
-                    
-                    <p class="ftrbook-desc" style="font-size: 14px; text-align: justify;">
-                      Jamie Watson and Charlotte Holmes are looking for a winter-break reprieve after a fall semester that almost got them killed. But Charlotte isn't the only Holmes with secrets, and the mood at her family's Sussex estate is palpably tense. On top of everything else, Holmes and Watson could be becoming more than friends—but still, the darkness in Charlotte's past is a wall between them.<br><br>
-                      A distraction arises soon enough, because Charlotte's beloved uncle Leander goes missing from the estate—after being oddly private about his latest assignment in a German art forgery ring. The game is afoot once again, and Charlotte is single-minded in her pursuit.<br><br>
-                      Their first stop? Berlin. Their first contact? August Moriarty (formerly Charlotte's obsession, currently believed by most to be dead), whose powerful family has been ripping off famous paintings for the last hundred years. But as they follow the gritty underground scene in Berlin to glittering art houses in Prague, Holmes and Watson begin to realize that this is a much more complicated case than a disappearance. Much more dangerous, too.<br><br>
-                      What they learn might change everything they know about their families, themselves, and each other.
-                    </p><br><br>
-                    <p class="ftrbook-ctgry" style="font-size: 14px; text-align: justify;">Categories: 
-                      <a href="#" target="_blank" style="text-decoration: none;">Mystery</a>,
-                      <a href="#" target="_blank" style="text-decoration: none;">Young Adult</a>,
-                      <a href="#" target="_blank" style="text-decoration: none;">Fiction</a>,
-                      <a href="#" target="_blank" style="text-decoration: none;">Contemporary</a>,
-                      <a href="#" target="_blank" style="text-decoration: none;">Mystery Thriller</a>,
-                      <a href="#" target="_blank" style="text-decoration: none;">Romance</a>,
-                      <a href="#" target="_blank" style="text-decoration: none;">Thriller</a>,
-                      <a href="#" target="_blank" style="text-decoration: none;">Crime</a>
-                      <!--categories link style-->
-                      <style>
-                        a:link {
-                          color: rgb(144, 144, 144);
-                          background-color: transparent;
-                          text-decoration: none;
-                        }
-                        a:hover {
-                          color: rgb(0, 162, 255);
-                          background-color: transparent;
-                          text-decoration: underline;
-                        }
-                        a:active {
-                          color: rgb(255, 166, 0);
-                          background-color: transparent;
-                          text-decoration: underline;
-                        }
-                        </style>
-                    </p>
-              </div><br>
+            </div>
 
-              <!--box4: featured book title-->
-              <div class="ftrbook-box">
-                <p class="english" style="text-align:center;">
+            <!-- Slider2 -->
+            <div class="swiper-slide trending-slide">
+              <div class="trending-slide-img">
+                <img src="./assets/images/slider/slider-book2.jpeg" alt="book2">
+              </div>
+              <div class="trending-slide-content">
+                <h1 class="book-title">Vanished</h1>
+                <div class="trending-slide-content-bottom">
+                  <h2 class="author">Sheela Chari</h2>
+                  <h3 class="book-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slider3 -->
+            <div class="swiper-slide trending-slide">
+              <div class="trending-slide-img">
+                <img src="./assets/images/slider/slider-book3.jpeg" alt="book3">
+              </div>
+              <div class="trending-slide-content">
+                <h1 class="book-title">The Midnight Library</h1>
+                <div class="trending-slide-content-bottom">
+                  <h2 class="author">Matt Haig</h2>
+                  <h3 class="book-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slider4 -->
+            <div class="swiper-slide trending-slide">
+              <div class="trending-slide-img">
+                <img src="./assets/images/slider/slider-book4.jpeg" alt="book4">
+              </div>
+              <div class="trending-slide-content">
+                <h1 class="book-title">Five Feet Apart</h1>
+                <div class="trending-slide-content-bottom">
+                  <h2 class="author">Rachel Lippincott</h2>
+                  <h3 class="book-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slider5 -->
+            <div class="swiper-slide trending-slide">
+              <div class="trending-slide-img">
+                <img src="./assets/images/slider/slider-book5.jpeg" alt="book5">
+              </div>
+              <div class="trending-slide-content">
+                <h1 class="book-title">They Both Die At The End</h1>
+                <div class="trending-slide-content-bottom">
+                  <h2 class="author">Adam Silvera</h2>
+                  <h3 class="book-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slider6 -->
+            <div class="swiper-slide trending-slide">
+              <div class="trending-slide-img">
+                <img src="./assets/images/slider/slider-book6.jpeg" alt="book6">
+              </div>
+              <div class="trending-slide-content">
+                <h1 class="book-title">Catch In The Rye</h1>
+                <div class="trending-slide-content-bottom">
+                  <h2 class="author">J.D. Salinger</h2>
+                  <h3 class="book-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slider7 -->
+            <div class="swiper-slide trending-slide">
+              <div class="trending-slide-img">
+                <img src="./assets/images/slider/slider-book7.jpeg" alt="book7">
+              </div>
+              <div class="trending-slide-content">
+                <h1 class="book-title">I'm The King Of The Castle</h1>
+                <div class="trending-slide-content-bottom">
+                  <h2 class="author">Susan Hill</h2>
+                  <h3 class="book-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- End of Slider -->
+          </div>
+
+
+          <div class="trending-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <script type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+
+    <!-------------------------FEATURED BOOK----------------------------->
+    <div class="ftr-book-container">
+      <!--box1: featured book title-->
+      <div class="ftrbook-box">
+        <p class="english" style="text-align:center;">
+          Featured Book of November
+        </p>
+      </div>
+      <!--box2: image of book-->
+      <div class="ftrbook-box">
+        <img src="./assets/images/featured/ftr-book.jpeg" width="300"
+          height="400" style="border-radius: 20px;" />
+      </div>
+      <!--box3: book title, author and description-->
+      <div class="ftrbook-box">
+        <p class="ftrbook-title" style="font-size: 24px; font-weight: bold;">The
+          Last of August</p>
+        <p class="ftrbook-author"
+          style="font-style: italic; font-weight: bold;">By Brittany Cavallaro
+        </p><br>
+        <p class="feedback-text"><img src="./assets/images/icons/star.png"
+            alt="star" width="14" height="14" /> 4.3k Ratings</p>
+        <p class="feedback-text"><img src="./assets/images/icons/eye.png"
+            alt="star" width="14" height="14" /> 37k Reads</p>
+        <p class="feedback-text"><img src="./assets/images/icons/person.png"
+            alt="star" width="14" height="14" /> 21k Reviews</p><br>
+
+        <p class="ftrbook-desc" style="font-size: 14px; text-align: justify;">
+          Jamie Watson and Charlotte Holmes are looking for a winter-break
+          reprieve after a fall semester that almost got them killed. But
+          Charlotte isn't the only Holmes with secrets, and the mood at her
+          family's Sussex estate is palpably tense. On top of everything else,
+          Holmes and Watson could be becoming more than friends—but still, the
+          darkness in Charlotte's past is a wall between them.<br><br>
+          A distraction arises soon enough, because Charlotte's beloved uncle
+          Leander goes missing from the estate—after being oddly private about
+          his latest assignment in a German art forgery ring. The game is afoot
+          once again, and Charlotte is single-minded in her pursuit.<br><br>
+          Their first stop? Berlin. Their first contact? August Moriarty
+          (formerly Charlotte's obsession, currently believed by most to be
+          dead), whose powerful family has been ripping off famous paintings for
+          the last hundred years. But as they follow the gritty underground
+          scene in Berlin to glittering art houses in Prague, Holmes and Watson
+          begin to realize that this is a much more complicated case than a
+          disappearance. Much more dangerous, too.<br><br>
+          What they learn might change everything they know about their
+          families, themselves, and each other.
+        </p><br><br>
+        <p class="ftrbook-ctgry" style="font-size: 14px; text-align: justify;">
+          Categories:
+          <a href="#" target="_blank"
+            style="text-decoration: none;">Mystery</a>,
+          <a href="#" target="_blank" style="text-decoration: none;">Young
+            Adult</a>,
+          <a href="#" target="_blank"
+            style="text-decoration: none;">Fiction</a>,
+          <a href="#" target="_blank"
+            style="text-decoration: none;">Contemporary</a>,
+          <a href="#" target="_blank" style="text-decoration: none;">Mystery
+            Thriller</a>,
+          <a href="#" target="_blank"
+            style="text-decoration: none;">Romance</a>,
+          <a href="#" target="_blank"
+            style="text-decoration: none;">Thriller</a>,
+          <a href="#" target="_blank" style="text-decoration: none;">Crime</a>
+          <!--categories link style-->
+          <style>
+            a:link {
+              color: rgb(144, 144, 144);
+              background-color: transparent;
+              text-decoration: none;
+            }
+
+            a:hover {
+              color: rgb(0, 162, 255);
+              background-color: transparent;
+              text-decoration: underline;
+            }
+
+            a:active {
+              color: rgb(255, 166, 0);
+              background-color: transparent;
+              text-decoration: underline;
+            }
+          </style>
+        </p>
+      </div><br>
+
+      <!--box4: featured book title-->
+      <div class="ftrbook-box">
+        <p class="english" style="text-align:center;">
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-------------------------AUDIO BOOKS----------------------------->
+    <div class="audiobook">
+      <h1>Audiobook Title</h1> <br><br>
+
+      <iframe src="https://archive.org/embed/AllTheBrightPlaces_201805"
+        width="560" height="384" frameborder="0" webkitallowfullscreen="true"
+        mozallowfullscreen="true" allowfullscreen></iframe>
+
+    </div>
+
+    <!-------------------------JOIN THE CLUB----------------------------->
+    <div class="headerj">
+      <div class="containerj">
+        <div class="container_left">
+          <h1 class="container_left_h1">Join the Club</h1> <!--header-->
+          <h3 class="container_left_h3">
+            We invite you to embark on a journey of connection, discovery, and
+            shared passions.</h3> <br>
+          <p>Whether you're an avid bookworm, a fitness enthusiast, a culinary
+            adventurer, or someone with a unique interest, 'Join the Club' is
+            your gateway to a world of like-minded individuals who are just as
+            excited as you are.
+          </p> <!--short text under header-->
+          <br>
+          <button type="button" class="container_left_button">Read our members'
+            stories</button>
+        </div>
+        <div class="container_right">
+          <!-- Member 1 -->
+          <div class="card">
+            <img src="./assets/images/team/alex-suprun-ZHvM3XIOHoE-unsplash.jpg"
+              alt="Member 1">
+            <div class="card_content">
+              <span><i class="ri-double-quotes-l"></i></span>
+              <div class="card_details">
+                <p class="card_details_p">
+                  The diverse selection of books keeps me on my toes, and the
+                  discussions are not only enlightening but also a lot of fun.
                 </p>
-            </div>
-
-            </div>
-
-          
-            <!-------------------------AUDIO BOOKS----------------------------->    
-            <div class="audiobook">
-                <h1>Audiobook Title</h1> <br><br>
-
-                <iframe src="https://archive.org/embed/AllTheBrightPlaces_201805" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
-
-            </div>
-
-            <!-------------------------JOIN THE CLUB----------------------------->
-            <div class="headerj">
-              <div class="containerj">
-                <div class="container_left">
-                  <h1 class="container_left_h1">Join the Club</h1> <!--header-->
-                    <h3 class="container_left_h3">
-                      We invite you to embark on a journey of connection, discovery, and shared passions.</h3> <br>
-                    <p>Whether you're an avid bookworm, a fitness enthusiast, a culinary adventurer, or someone with a unique interest, 'Join the Club' is your gateway to a world of like-minded individuals who are just as excited as you are.
-                    </p> <!--short text under header-->
-                    <br>
-                    <button type="button" class="container_left_button">Read our members' stories</button>
-                </div>
-                <div class="container_right">
-                  <!-- Member 1 -->
-                  <div class="card">
-                    <img src="./assets/images/team/alex-suprun-ZHvM3XIOHoE-unsplash.jpg" alt="Member 1">
-                    <div class="card_content">
-                      <span><i class="ri-double-quotes-l"></i></span>
-                      <div class="card_details">
-                        <p class="card_details_p">
-                          The diverse selection of books keeps me on my toes, and the discussions are not only enlightening but also a lot of fun.
-                        </p>
-                        <h4 class="card_details_h4">-  Alex Suprun</h4>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Member 2 -->
-                  <div class="card">
-                    <img src="./assets/images/team/devn-53ouhY5koKY-unsplash.jpg" alt="Member 2">
-                    <div class="card_content">
-                      <span><i class="ri-double-quotes-l"></i></span>
-                      <div class="card_details">
-                        <p class="card_details_p">
-                          I thoroughly enjoyed the featured books. The characters were captivating, and the story kept me on the edge of my seat.
-                        </p>
-                        <h4 class="card_details_h4">-  Devon Nackos</h4>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Member 3 -->
-                  <div class="card">
-                    <img src="./assets/images/team/cesar-rincon-XHVpWcr5grQ-unsplash.jpg" alt="Member 3">
-                    <div class="card_content">
-                      <span><i class="ri-double-quotes-l"></i></span>
-                      <div class="card_details">
-                        <p class="card_details_p">
-                          The book club has broadened my reading horizons in ways I couldn't have imagined, and I've made some great friends along the way.
-                        </p>
-                        <h4 class="card_details_h4">-  Chris Wocinte</h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <h4 class="card_details_h4">- Alex Suprun</h4>
               </div>
             </div>
-            <!-------------------------FOOTER----------------------------->
-            <div class="info-footer">
-              <img src="./assets/images/logo/logo2-white1.png" ><br><br>
-              <div>
-                  <p class="followus">Follow Us<br>
-                  <!-- Add font awesome icons -->
-                  <a href="#" class="fa fa-facebook"></a>
-                  <a href="#" class="fa fa-twitter"></a>
-                  <a href="#" class="fa fa-linkedin"></a>
-                  </p><br><br>
-              <footer class="footer" style="text-align:center;">
-                  &#169 2023 Papyrus. All Rights Reserved.
-              </footer><br>
-                  
+          </div>
+          <!-- Member 2 -->
+          <div class="card">
+            <img src="./assets/images/team/devn-53ouhY5koKY-unsplash.jpg"
+              alt="Member 2">
+            <div class="card_content">
+              <span><i class="ri-double-quotes-l"></i></span>
+              <div class="card_details">
+                <p class="card_details_p">
+                  I thoroughly enjoyed the featured books. The characters were
+                  captivating, and the story kept me on the edge of my seat.
+                </p>
+                <h4 class="card_details_h4">- Devon Nackos</h4>
               </div>
             </div>
+          </div>
+          <!-- Member 3 -->
+          <div class="card">
+            <img
+              src="./assets/images/team/cesar-rincon-XHVpWcr5grQ-unsplash.jpg"
+              alt="Member 3">
+            <div class="card_content">
+              <span><i class="ri-double-quotes-l"></i></span>
+              <div class="card_details">
+                <p class="card_details_p">
+                  The book club has broadened my reading horizons in ways I
+                  couldn't have imagined, and I've made some great friends along
+                  the way.
+                </p>
+                <h4 class="card_details_h4">- Chris Wocinte</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------------FOOTER----------------------------->
+    <div class="info-footer">
+      <img src="./assets/images/logo/logo2-white1.png"><br><br>
+      <div>
+        <p class="followus">Follow Us<br>
+          <!-- Add font awesome icons -->
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+        </p><br><br>
+        <footer class="footer" style="text-align:center;">
+          &#169 2023 Papyrus. All Rights Reserved.
+        </footer><br>
 
-            
-        </div>  
-    </body>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+
 </html>
