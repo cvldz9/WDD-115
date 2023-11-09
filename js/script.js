@@ -1,3 +1,10 @@
+// Add Meta Tag
+const newMetaTag = document.createElement("meta");
+newMetaTag.name = "description";
+newMetaTag.content =
+  "Papyrus is a haven for book enthusiasts, offering a rich and diverse collection that spans genres and captivates the imagination.";
+document.head.appendChild(newMetaTag);
+
 // Change Title
 document.title = "Papyrus";
 
