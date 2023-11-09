@@ -1,3 +1,6 @@
+// Change Title
+document.title = "Papyrus";
+
 /*----------TRENDING BOOKS----------*/
 var trendingSlider = new Swiper(".trending-slider", {
   effect: "coverflow",
