@@ -89,3 +89,12 @@ dots.forEach((dot) => {
     showSlide(slideIndex);
   });
 });
+
+// Use mousemove event to change the arrows background
+leftArrow.addEventListener("mousemove", () => {
+  leftArrow.style.backgroundColor = "white";
+});
+
+rightArrow.addEventListener("mousemove", () => {
+  rightArrow.style.backgroundColor = "white";
+});
