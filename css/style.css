@@ -742,3 +742,10 @@ bottom: 0;
   margin: auto;
   padding-bottom: 20px;
 }
+
+
+.privacy:hover {
+  color: #55acee;
+  text-decoration: none;
+  cursor: pointer;
+}
