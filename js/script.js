@@ -98,3 +98,12 @@ leftArrow.addEventListener("mousemove", () => {
 rightArrow.addEventListener("mousemove", () => {
   rightArrow.style.backgroundColor = "white";
 });
+
+// Restore the default background color when the mouse leaves the arrows
+leftArrow.addEventListener("mouseout", () => {
+  leftArrow.style.backgroundColor = "rgba(243, 240, 240, 0.7)";
+});
+
+rightArrow.addEventListener("mouseout", () => {
+  rightArrow.style.backgroundColor = "rgba(243, 240, 240, 0.7)";
+});
