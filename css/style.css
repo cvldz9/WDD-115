@@ -607,7 +607,8 @@ bottom: 0;
 
 .card_content span i {
   font-size: 2rem;
-  color: rgb(84, 124, 241);
+  /* color: rgb(84, 124, 241); */
+  color: #ec994b;
 }
 
 .card_details {
