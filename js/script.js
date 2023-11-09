@@ -20,3 +20,36 @@ var trendingSlider = new Swiper(".trending-slider", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// Hero Slider
+const slides = document.querySelectorAll(".slide");
+let currentSlide = 0;
+
+function showSlide(slideIndex) {
+  if (slideIndex < 0) {
+    currentSlide = slides.length - 1;
+  } else if (slideIndex >= slides.length) {
+    currentSlide = 0;
+  }
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[currentSlide].style.display = "block";
+}
+
+function nextSlide() {
+  currentSlide++;
+  showSlide(currentSlide);
+}
+
+function previousSlide() {
+  currentSlide--;
+  showSlide(currentSlide);
+}
+
+// Automatically advance to the next slide every 3 seconds.
+setInterval(nextSlide, 3500);
+
+showSlide(currentSlide);
