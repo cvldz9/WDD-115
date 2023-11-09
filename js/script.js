@@ -11,6 +11,12 @@ document.title = "Papyrus";
 // Change Background Color
 document.body.style.backgroundColor = "lightgray";
 
+// Change the Color of All Links
+const allLinks = document.links;
+for (const link of allLinks) {
+  link.style.color = "green";
+}
+
 /*----------TRENDING BOOKS----------*/
 var trendingSlider = new Swiper(".trending-slider", {
   effect: "coverflow",
