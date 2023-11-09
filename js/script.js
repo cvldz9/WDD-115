@@ -137,6 +137,11 @@ const featuredBookImageBox = document.querySelector(
   ".ftrbook-box:nth-of-type(2)"
 );
 
+// Select the featured book description box
+const featuredBookDescriptionBox = document.querySelector(
+  ".ftrbook-box:nth-of-type(3)"
+);
+
 // Add some padding to the title box
 featuredBookTitleBox.style.padding = "20px";
 
@@ -144,3 +149,10 @@ featuredBookTitleBox.style.padding = "20px";
 featuredBookImageBox.style.margin = "0 auto";
 featuredBookImageBox.style.borderRadius = "20px";
 featuredBookImageBox.style.gridColumn = "1 / 4";
+
+// Style the description box by setting a background color, adding padding, and using a box shadow
+featuredBookDescriptionBox.style.padding = "20px";
+featuredBookDescriptionBox.style.borderRadius = "20px";
+featuredBookDescriptionBox.style.boxShadow = "5px 5px 20px rgba(0, 0, 0, 0.2)";
+featuredBookDescriptionBox.style.gridColumn = "4 / 10";
+featuredBookDescriptionBox.style.gridRow = "2 / 3";
