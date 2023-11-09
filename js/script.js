@@ -132,5 +132,15 @@ const featuredBookTitleBox = document.querySelector(
   ".ftrbook-box:nth-of-type(1)"
 );
 
+// Select the featured book image box
+const featuredBookImageBox = document.querySelector(
+  ".ftrbook-box:nth-of-type(2)"
+);
+
 // Add some padding to the title box
 featuredBookTitleBox.style.padding = "20px";
+
+// Adjust the image box by adding some margin and a grid column.
+featuredBookImageBox.style.margin = "0 auto";
+featuredBookImageBox.style.borderRadius = "20px";
+featuredBookImageBox.style.gridColumn = "1 / 4";
