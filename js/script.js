@@ -9,7 +9,7 @@ document.head.appendChild(newMetaTag);
 document.title = "Papyrus";
 
 // Change Background Color
-document.body.style.backgroundColor = "lightgray";
+document.body.style.backgroundColor = "white";
 
 // Change the Color of All Links
 const allLinks = document.links;
