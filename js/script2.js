@@ -12,10 +12,10 @@ function enterEmailAndSubscribe() {
         
         // Show a notification that disappears after 3 seconds
         const notification = document.createElement('div');
-        notification.textContent = 'You have successfully subscribed!';
+        notification.textContent = 'Welcome to our subscriber list! You are officially part of the club! ';
         notification.style.position = 'fixed';
         notification.style.top = '10px';
-        notification.style.right = '10px';
+        notification.style.right = '33%';
         notification.style.backgroundColor = '#28a745';
         notification.style.color = '#fff';
         notification.style.padding = '10px';
@@ -29,8 +29,16 @@ function enterEmailAndSubscribe() {
     }
 }
 
+// Function to read members stories
+function readMemberStories() {
+    alert('Thank you for your interest! However, you must be logged in to view the members stories.');
+}
+
 // Attach the download function to the button click event
 document.getElementById('myButton').addEventListener('click', downloadAudiobook);
 
 // Attach the enterEmailAndSubscribe function to the element with the ID "yourEmail" click event
 document.getElementById('yourEmail').addEventListener('click', enterEmailAndSubscribe);
+
+// Attach the download function to the button click event
+document.getElementById('readStory').addEventListener('click', readMemberStories);
