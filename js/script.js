@@ -14,7 +14,7 @@ document.body.style.backgroundColor = "white";
 // Change the Color of All Links
 const allLinks = document.links;
 for (const link of allLinks) {
-  link.style.color = "gray";
+  link.style.color = "black";
 }
 
 /*----------TRENDING BOOKS----------*/
