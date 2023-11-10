@@ -713,9 +713,14 @@ bottom: 0;
   padding-bottom: 20px;
 }
 
-
+.privacy {
+  font-size: 11px;
+  color: rgb(242, 242, 242, 0.5);
+  font-weight: 300;
+}
 .privacy:hover {
   color: #55acee;
   text-decoration: none;
   cursor: pointer;
 }
+
