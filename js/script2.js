@@ -12,13 +12,16 @@ function enterEmailAndSubscribe() {
         
         // Show a notification that disappears after 3 seconds
         const notification = document.createElement('div');
-        notification.textContent = 'Welcome to our subscriber list! You are officially part of the club! Yey ';
+        notification.textContent = 'Welcome to our subscriber list! You are officially part of the club! Yey! ';
         notification.style.position = 'fixed';
         notification.style.top = '10px';
         notification.style.right = '33%';
         notification.style.backgroundColor = '#28a745';
         notification.style.color = '#fff';
-        notification.style.padding = '10px';
+        notification.style.paddingTop = '12px';
+        notification.style.paddingBottom = '12px';
+        notification.style.paddingRight = '20px';
+        notification.style.paddingLeft = '20px';
         notification.style.borderRadius = '5px';
         document.body.appendChild(notification);
 
