@@ -490,6 +490,24 @@ bottom: 0;
   text-align: center;
 }
 
+.download_button {
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  background-color: #ffbf00;
+  color: #313131;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.download_button:hover {
+  background-color: white;
+  color: rgb(84, 124, 241);
+}
+
 /*----------JOIN THE CLUB----------*/
 
 .headerj {
