@@ -3,16 +3,16 @@ function downloadAudiobook() {
     alert('Your free copy of the audiobook has been successfully downloaded! Please check your Downloads folder to locate the file.');
 }
 
-// Function to enter email address and subscribe
+// Function to enter email address and subscribe to newsletter
 function enterEmailAndSubscribe() {
     const email = prompt("Enter email to subscribe");
     if (email) {
-        // Handle the email subscription, e.g., send it to a server or process it as needed
-        console.log("Subscribed with email:", email);
+        // Handle the email subscription
+        console.log("Successfully subscribed with email:", email);
         
         // Show a notification that disappears after 3 seconds
         const notification = document.createElement('div');
-        notification.textContent = 'Welcome to our subscriber list! You are officially part of the club! ';
+        notification.textContent = 'Welcome to our subscriber list! You are officially part of the club! Yey ';
         notification.style.position = 'fixed';
         notification.style.top = '10px';
         notification.style.right = '33%';
@@ -25,7 +25,7 @@ function enterEmailAndSubscribe() {
         // Set a timeout to remove the notification after 3 seconds
         setTimeout(function() {
             notification.style.display = 'none';
-        }, 3000);
+        }, 4000);
     }
 }
 
