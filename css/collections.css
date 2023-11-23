@@ -87,6 +87,50 @@ body {
   padding: 1rem 0;
 }
 
+.row1 {
+    max-width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 55px;
+    padding: 0px;
+}
+
+.col {
+    /* grid-column: 1 / 2; */
+    padding: 20px;
+    align-items: center;
+    background-size: fill;
+    /* display: block; */
+}
+
+.images {
+    width: 310px;
+    height: 335px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.img-title {
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 7px;
+}
+
+.img-auth {
+    font-size: 14px;
+    padding-top: 0px;
+}
+
+p a {
+    text-decoration: none;
+    color: #313131;
+    font-size: 16px;
+}
+
+p a:hover {
+    color: #0678A9;
+}
 
 
 
