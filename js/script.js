@@ -173,3 +173,29 @@ categoryLinks.forEach((link) => {
     link.style.textDecoration = "none";
   });
 });
+
+// Open the sign-up popup
+function openPopup() {
+  console.log("OpenPopup");
+  document.getElementById("signupPopup").style.display = "block";
+}
+
+// Close the sign-up popup
+function closePopup() {
+  document.getElementById("signupPopup").style.display = "none";
+}
+
+// Handle form submission (you can customize this function for your backend)
+function submitForm() {
+  // Get form values
+  const username = document.getElementById("username").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  // Perform form validation here if needed
+
+  // Send the data to the server-side
+  alert("Oops, there's no server-side!");
+
+  closePopup();
+}
