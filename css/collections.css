@@ -78,6 +78,33 @@ body {
   padding: 0px 0px 0px 0px;
 }
 
+/*----------CATEGORIES BUTTON----------*/
+.col-button {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.btn {
+    flex: 1;
+    text-align: center;
+}
+
+.button {
+    background-color: white; 
+    color: black; 
+    border: 1px solid rgb(84, 124, 241);
+  }
+  
+  .button:hover {
+    background-color: rgb(84, 124, 241);
+    color: white;
+  }
 
 /*----------COLLECTIONS----------*/
 .collection-heading {
@@ -127,31 +154,10 @@ p a {
 }
 
 p a:hover {
-    color: rgb(84, 124, 241);;
+    color: rgb(84, 124, 241);
 }
 
 
-.col-button {
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 14px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 12px;
-}
-
-.button {
-    background-color: white; 
-    color: black; 
-    border: 2px solid #008CBA;
-  }
-  
-  .button:hover {
-    background-color: #008CBA;
-    color: white;
-  }
 
 
 
