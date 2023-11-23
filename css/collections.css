@@ -102,11 +102,11 @@ body {
     background-size: fill;
 }
 
-.collections {
-    width: 310px;
-    height: 335px;
+.collection {
+    width: 300px;
+    height: 400px;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .book-title {
@@ -127,7 +127,7 @@ p a {
 }
 
 p a:hover {
-    color: #0678A9;
+    color: rgb(84, 124, 241);;
 }
 
 
