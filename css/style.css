@@ -64,10 +64,19 @@ body {
   align-items: left;
   width: 100%;
   height: 700px;
-  /* background-image: url("./../assets/images/hero/Hero-bg.png"); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  position: relative;
+  z-index: 1;
+  /* Lower z-index to position the slider below the popup */
+}
+
+/* Add a higher z-index to other elements within the slider if needed */
+.slide-text,
+.slide-arrow,
+.navigation-dots {
+  z-index: 2;
 }
 
 .slider {
@@ -564,7 +573,7 @@ bottom: 0;
   border: white 0.5px solid;
   border-radius: 50px;
   /* background-color: #ffbf00; */
-  background-color:  rgb(84, 124, 241);
+  background-color: rgb(84, 124, 241);
   /* color: #313131; */
   color: white;
   font-size: 14px;
@@ -736,9 +745,75 @@ bottom: 0;
   color: rgb(242, 242, 242, 0.5);
   font-weight: 300;
 }
+
 .privacy:hover {
   color: #55acee;
   text-decoration: none;
   cursor: pointer;
 }
 
+/* Popup Styles */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  /* Ensure the popup is on top */
+}
+
+.popup-content {
+  position: absolute;
+  width: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 1001;
+  /* Ensure the popup content is on top of the popup background */
+}
+
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin: 10px 0;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
