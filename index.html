@@ -47,7 +47,7 @@
           <li><a href="/kids.html">Kids</a></li>
           <li><a href="/collections.html">Collections</a></li>
           <li><a href="">Audiobooks</a></li>
-          <li><a href="">Sign Up</a></li>
+          <li><a href="#" onclick="openPopup()">Sign Up</a></li>
         </ul>
       </nav>
     </div>
@@ -62,7 +62,8 @@
         <div class="slide active">
           <img src="/assets/images/hero-slider/slide4.jpg" alt="Slide 1">
           <div class="slide-text">
-              <p class="slide-tagline">"Fill your house with stacks of books, with all the crannies and all the nooks." - Dr. Seuss</p><br>
+            <p class="slide-tagline">"Fill your house with stacks of books, with
+              all the crannies and all the nooks." - Dr. Seuss</p><br>
           </div>
         </div>
         <div class="slide">
@@ -299,8 +300,8 @@
       <div class="ftrbook-box">
         <p class="ftrbook-title" style="font-size: 24px; font-weight: bold;">The
           Last of August</p>
-        <p class="ftrbook-author"
-          style="font-weight: bold;">By Brittany Cavallaro
+        <p class="ftrbook-author" style="font-weight: bold;">By Brittany
+          Cavallaro
         </p><br>
         <p class="feedback-text"><img src="./assets/images/icons/star.png"
             alt="star" width="14" height="14" /> 4.3k Ratings</p>
@@ -368,7 +369,8 @@
         mozallowfullscreen="true" allowfullscreen></iframe>
 
       <br>
-        <button id="myButton" type="button" class="download_button">Free Download</button> <br>
+      <button id="myButton" type="button" class="download_button">Free
+        Download</button> <br>
     </div>
 
     <!-------------------------JOIN THE CLUB----------------------------->
@@ -379,14 +381,23 @@
           <h3 class="container_left_h3">
             We invite you to embark on a journey of connection, discovery, and
             shared passions.</h3> <br>
-          <p>Whether you're a devoted book lover, a fitness aficionado, a culinary explorer, or someone with a distinct passion, 'Join the Club' offers you access to a community of kindred spirits who share your enthusiasm. <br><br>Discover a welcoming community where your interests and passions are celebrated. 'Join the Club' connects you with people who not only share your hobbies but also inspire you to explore new horizons.
+          <p>Whether you're a devoted book lover, a fitness aficionado, a
+            culinary explorer, or someone with a distinct passion, 'Join the
+            Club' offers you access to a community of kindred spirits who share
+            your enthusiasm. <br><br>Discover a welcoming community where your
+            interests and passions are celebrated. 'Join the Club' connects you
+            with people who not only share your hobbies but also inspire you to
+            explore new horizons.
           </p> <!--short text under header-->
           <br>
-          <button id="readStory" type="button" class="container_left_button">Read our members'
+          <button id="readStory" type="button"
+            class="container_left_button">Read our members'
             stories</button> <br>
-          <button id="yourEmail" type="button" class="container_left_button2">Subscribe to our newsletters</button>
+          <button id="yourEmail" type="button"
+            class="container_left_button2">Subscribe to our newsletters</button>
         </div>
-        <div id="successMessage" style="display: none;">You have successfully subscribed!</div>
+        <div id="successMessage" style="display: none;">You have successfully
+          subscribed!</div>
         <div class="container_right">
           <!-- Member 1 -->
           <div class="card">
@@ -437,14 +448,13 @@
           </div>
           <!-- Member 4 -->
           <div class="card">
-            <img
-              src="./assets/images/team/hailey.jpg"
-              alt="Member 3">
+            <img src="./assets/images/team/hailey.jpg" alt="Member 3">
             <div class="card_content">
               <span><i class="ri-double-quotes-l"></i></span>
               <div class="card_details">
                 <p class="card_details_p">
-                  I always look forward to the upcoming reading selections and the chance to explore new books.
+                  I always look forward to the upcoming reading selections and
+                  the chance to explore new books.
                 </p>
                 <h4 class="card_details_h4">- Hailey Oswood</h4>
               </div>
@@ -472,6 +482,29 @@
 
       </div>
     </div>
+    <!-- Sign-up Popup -->
+    <div id="signupPopup" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+
+          <label for="password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password"
+            required>
+
+          <button type="button" onclick="submitForm()">Sign Up</button>
+        </form>
+      </div>
+    </div>
 
 
   </div>
@@ -481,10 +514,10 @@
   <script nomodule
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="./js/script.js"></script>
   <script src="./js/script2.js"></script>
+  <script src="./js/script.js"></script>
 
-  
+
 </body>
 
 </html>
