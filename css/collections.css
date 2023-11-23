@@ -97,11 +97,9 @@ body {
 }
 
 .col {
-    /* grid-column: 1 / 2; */
     padding: 20px;
     align-items: center;
     background-size: fill;
-    /* display: block; */
 }
 
 .collections {
