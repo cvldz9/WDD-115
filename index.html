@@ -487,21 +487,48 @@
       <div class="popup-content">
         <span class="close" onclick="closePopup()">&times;</span>
         <h2>Sign Up</h2>
-        <form id="signupForm">
-          <label for="username">Username:</label>
-          <input type="text" id="username" name="username" required>
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required>
-
-          <label for="password">Confirm Password:</label>
-          <input type="password" id="confirm-password" name="confirm-password"
-            required>
-
-          <button type="button" onclick="submitForm()">Sign Up</button>
+        <!-- multistep form -->
+        <form id="msform">
+          <!-- progressbar -->
+          <ul id="progressbar">
+            <li class="active">Account Setup</li>
+            <li>Social Profiles</li>
+            <li>Personal Details</li>
+          </ul>
+          <!-- fieldsets -->
+          <fieldset>
+            <h2 class="fs-title">Create your account</h2>
+            <h3 class="fs-subtitle">This is step 1</h3>
+            <input type="text" name="email" placeholder="Email" />
+            <input type="password" name="pass" placeholder="Password" />
+            <input type="password" name="cpass"
+              placeholder="Confirm Password" />
+            <input type="button" name="next" class="next action-button"
+              value="Next" />
+          </fieldset>
+          <fieldset>
+            <h2 class="fs-title">Social Profiles</h2>
+            <h3 class="fs-subtitle">Your presence on the social network</h3>
+            <input type="text" name="twitter" placeholder="Twitter" />
+            <input type="text" name="facebook" placeholder="Facebook" />
+            <input type="text" name="gplus" placeholder="Google Plus" />
+            <input type="button" name="previous" class="previous action-button"
+              value="Previous" />
+            <input type="button" name="next" class="next action-button"
+              value="Next" />
+          </fieldset>
+          <fieldset>
+            <h2 class="fs-title">Personal Details</h2>
+            <h3 class="fs-subtitle">We will never sell it</h3>
+            <input type="text" name="fname" placeholder="First Name" />
+            <input type="text" name="lname" placeholder="Last Name" />
+            <input type="text" name="phone" placeholder="Phone" />
+            <textarea name="address" placeholder="Address"></textarea>
+            <input type="button" name="previous" class="previous action-button"
+              value="Previous" />
+            <button type="button" class="submit action-button"
+              onclick="submitForm()">Sign Up</button>
+          </fieldset>
         </form>
       </div>
     </div>
@@ -509,11 +536,17 @@
 
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
   <script type="module"
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/jquery.js"></script>
   <script src="./js/script2.js"></script>
   <script src="./js/script.js"></script>
 

@@ -187,14 +187,7 @@ function closePopup() {
 
 // Handle form submission (you can customize this function for your backend)
 function submitForm() {
-  // Get form values
-  const username = document.getElementById("username").value;
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
-
-  // Perform form validation here if needed
-
-  // Send the data to the server-side
+  console.log("Clicked!");
   alert("Oops, there's no server-side!");
 
   closePopup();
