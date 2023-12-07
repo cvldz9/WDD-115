@@ -177,6 +177,15 @@ p a:hover {
 }
 
 
+
+/*----------BOOKS CARD----------*/
+.explore-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+
 /*----------FOOTER----------*/
 .info-footer {
     display: block;
