@@ -181,7 +181,8 @@ p a:hover {
 .collections-container {
   display: flex;
   justify-content: center;
-  padding: 20px 20px 20px 20px;
+  gap: 20px; /* Adjust the value based on the space you want between cards */
+  padding: 20px;
 }
 
 
