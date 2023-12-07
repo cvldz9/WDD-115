@@ -185,6 +185,29 @@ p a:hover {
     color: #0678A9;
 }
 
+
+/* ----------- NEW ARRIVALS -------------- */
+
+.arrivals-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 18rem; /* Set a fixed width for each card */
+  margin: 10px; /* Adjust margin as needed for spacing between cards */
+}
+
+.card img {
+  width: 100%; /* Make the image fill the entire width of the card */
+  height: 100%; /* Ensure the image takes up the full height of the card */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+}
+
+.red-heart {
+  color: red;
+}
+
 /*----------FOOTER----------*/
 .info-footer {
   display: block;
