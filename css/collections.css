@@ -177,11 +177,11 @@ p a:hover {
 }
 
 
-
 /*----------BOOKS CARD----------*/
-.explore-container {
+.collections-container {
   display: flex;
   justify-content: center;
+  padding: 20px 20px 20px 20px;
 }
 
 
