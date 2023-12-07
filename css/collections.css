@@ -79,7 +79,14 @@ body {
 }
 
 /*----------CATEGORIES BUTTON----------*/
-.col-button {
+.btn-outline-primary,
+.btn-outline-secondary,
+.btn-outline-success,
+.btn-outline-danger,
+.btn-outline-warning,
+.btn-outline-info,
+.btn-outline-light,
+.btn-outline-dark {
     padding: 10px;
     text-align: center;
     text-decoration: none;
@@ -95,13 +102,20 @@ body {
     text-align: center;
 }
 
-.button {
+.btn-outline-primary,
+.btn-outline-secondary,
+.btn-outline-success,
+.btn-outline-danger,
+.btn-outline-warning,
+.btn-outline-info,
+.btn-outline-light,
+.btn-outline-dark {
     background-color: white; 
     color: black; 
     border: 1px solid rgb(84, 124, 241);
   }
-  
-  .button:hover {
+ 
+.btn:hover {
     background-color: rgb(84, 124, 241);
     color: white;
   }
