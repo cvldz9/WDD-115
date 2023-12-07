@@ -79,6 +79,10 @@ body {
 }
 
 /*----------CATEGORIES BUTTON----------*/
+.button-container {
+  text-align: center;
+}
+
 .btn-outline-primary,
 .btn-outline-secondary,
 .btn-outline-success,
