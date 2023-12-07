@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Papyrus > Kids</title>
+    <title>Papyrus > Kids - Bootstrap and JQuery</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link
@@ -11,6 +11,8 @@
     rel="stylesheet">
     <link rel="stylesheet" href="./css/stylekids.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 </head>
 <body>
@@ -144,7 +146,7 @@
                         <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="openModal('I Will Love You Forever', 'assets/images/kids/loveyouforever.png', 'From Caroline Jayne Church, the mega bestselling illustrator behind I Love You Through and Through, Good Night, I Love You, and Ten Tiny Toes comes an instant classic in the making with a new padded storybook to treasure and share over and over again.<br><br>With charming illustrations and poignant rhyming text, this tender story is a heartwarming reminder of the never ending love between a parent and child. A sweet message to share with little ones to let them know that whoever they become and wherever they go, they are cherished.<br><br>When I saw you for the very first time,<br>I was filled with joy that you were mine.<br>I knew I would love you forever.')">View details</a>
 
                         <!-- Heart icon at the bottom right -->
-                        <span class="fa fa-heart favorite-icon" style="position: absolute; bottom: 10px; right: calc(50% - 130px); font-size: 30px; cursor: pointer;" onclick="toggleHeart(this)"></span>
+                        <span class="fa fa-heart favorite-icon animate__animated animate__bounce " style="position: absolute; bottom: 10px; right: calc(50% - 130px); font-size: 30px; cursor: pointer;"></span>
 
                     </div>
                 </div>
@@ -156,7 +158,7 @@
                         <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="openModal('I Am a Big Sister', 'assets/images/kids/bigsister.png', 'Share the joys of becoming a big sister! <br><br>With the arrival of a new baby comes many transitions, and big sisters may need a little extra tender loving care to adjust to a new family situation.<br><br>This sweet story with adorable toddler illustrations by Caroline Jayne Church is just right to share with and prepare an older sister getting ready for an expanding family.<br><br>La llegada de un bebé viene acompañada de nuevas experiencias, y las hermanas pueden necesitar un poco de tiempo y mucho cariño para adaptarse a la nueva situación familiar. <br><br>Este hermoso libro, con ilustraciones adorables de Caroline Jayne Church, es perfecto para preparar a una futura hermana mayor para los cambios que traerá la llegada del bebé.')">View details</a>
                         
                         <!-- Heart icon at the bottom right -->
-                        <span id="heart-icon2" class="fa fa-heart favorite-icon" style="position: absolute; bottom: 10px; right: calc(50% - 130px); font-size: 30px; cursor: pointer;" onclick="toggleHeart(this)"></span>
+                        <span id="heart-icon2" class="fa fa-heart favorite-icon" style="position: absolute; bottom: 10px; right: calc(50% - 130px); font-size: 30px; cursor: pointer;"></span>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
@@ -167,7 +169,7 @@
                         <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="openModal('Puppy Love', 'assets/images/kids/puppylove.png', 'A delightful new pup-filled board book from the bestselling creator of I Love You Through and Through! <br><br>Caroline Jayne Church, mega-bestselling creator of Ten Tiny Toes and Good Night, I Love You, brings us a sweet, rhyming celebration of a puppys love for every season of the year! Her charming poem guides the reader through puddle jumping in spring, kite flying in summer, leaf chasing in fall, and ice-skating in winter... and ends snuggled by a cozy fire at the end of a long day.<br><br>Perfect for sharing at any time of year, puppy lovers -- and everyone! -- will agree that this charming book will be welcomed warmly into the Caroline Jayne Church library.')">View details</a>
 
                         <!-- Heart icon at the bottom right -->
-                        <span id="heart-icon3" class="fa fa-heart favorite-icon" style="position: absolute; bottom: 10px; right: calc(50% - 130px); font-size: 30px; cursor: pointer;" onclick="toggleHeart(this)"></span>
+                        <span id="heart-icon3" class="fa fa-heart favorite-icon" style="position: absolute; bottom: 10px; right: calc(50% - 130px); font-size: 30px; cursor: pointer;"></span>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
@@ -178,7 +180,7 @@
                         <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="openModal('Here Comes Christmas!', 'assets/images/kids/herecomeschristmas.png', 'Celebrate Christmas with this tactile treat by bestseller Caroline Jayne Church! The third board book in this holiday series.<br><br>A little boy imagines what he will receive for Christmas: a dragon to ride, a lollipop tree--but can these things be? Caroline Jayne Churchs incredible art appeal to kids and parents alike, and the touch-and-feels on every spread keep readers enthralled!')">View details</a>
 
                         <!-- Heart icon at the bottom right -->
-                        <span id="heart-icon4" class="fa fa-heart favorite-icon" style="position: absolute; bottom: 10px; right: calc(50% - 130px); font-size: 30px; cursor: pointer;" onclick="toggleHeart(this)"></span>
+                        <span id="heart-icon4" class="fa fa-heart favorite-icon" style="position: absolute; bottom: 10px; right: calc(50% - 130px); font-size: 30px; cursor: pointer;"></span>
 
                     </div>
                 </div>
@@ -315,61 +317,86 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script2.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
+
     <script>
-        const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
+        // Function to append the alert
         const appendAlert = (message, type) => {
-            const wrapper = document.createElement('div');
-            wrapper.innerHTML = [
-                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-                `   <div>${message}</div>`,
-                '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-                '</div>'
-            ].join('');
+            const $alertPlaceholder = $('#liveAlertPlaceholder');
+            const $wrapper = $(`
+                <div class="alert alert-${type} alert-dismissible" role="alert">
+                    <div>${message}</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            `);
 
             // Calculate the position based on the current scroll
-            wrapper.style.position = 'fixed';
-            wrapper.style.top = '0';
-            wrapper.style.left = '50%';
-            wrapper.style.transform = 'translateX(-50%)';
-           
+            $wrapper.css({
+                position: 'fixed',
+                top: '0',
+                left: '50%',
+                transform: 'translateX(-50%)'
+            });
 
-            document.body.appendChild(wrapper);
+            $alertPlaceholder.append($wrapper);
         };
 
-        const alertTrigger = document.getElementById('liveAlertBtn');
-        if (alertTrigger) {
-            alertTrigger.addEventListener('click', () => {
+        // Event listener for the alert trigger button
+        const $alertTrigger = $('#liveAlertBtn');
+        if ($alertTrigger.length) {
+            $alertTrigger.on('click', () => {
                 appendAlert('Hello, our Book Catalogue page is still under construction! We will let you know when it is up and ready!', 'info');
             });
         }
-    </script>
 
-    <script>
         // Function to append the toaster
         const appendToaster = (message) => {
-            const toastContainer = document.getElementById('liveToast');
-            const toastBody = toastContainer.querySelector('.toast-body');
-            toastBody.textContent = message;
+            const $toastContainer = $('#liveToast');
+            const $toastBody = $toastContainer.find('.toast-body');
+            $toastBody.text(message);
 
             // Initialize the toast after updating the content
-            const toastBootstrap = new bootstrap.Toast(toastContainer);
+            const toastBootstrap = new bootstrap.Toast($toastContainer[0]);
             toastBootstrap.show();
         };
 
         // Event listeners for the heart icons in each card
-        const favoriteIcons = document.querySelectorAll('.favorite-icon');
+        // const toggleHeart = (event)=>{
+        //     console.log('this item', event)
+        // }
+        $('.favorite-icon').on('click', function() {
+            // Toggle the class to change the color of the heart icon
+            $(this).toggleClass('red-heart');
+            
+            $(this).toggleClass('animate__animated animate__heartBeat');
 
-        favoriteIcons.forEach((icon, index) => {
-            icon.addEventListener('click', () => {
-                // Toggle the class to change the color of the heart icon
-                icon.classList.toggle('red-heart');
-
-                // Show the toaster 
-                // appendToaster(`Great news! Book ${index + 1} has been added to your favorite books.`);
-                appendToaster(`Awesome, the book has been added to your list.`);
-            });
+            // Show the toaster 
+            // appendToaster(`Great news! Book ${index + 1} has been added to your favorite books.`);
+            appendToaster('Awesome, the book has been added to your list.');
         });
     </script>
+
+    <!-- Include jQuery library -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+
+    <!-- Your HTML structure -->
+    <div id="modalTitle"></div>
+    <div id="modalContent"></div>
+
+    <!-- jQuery code -->
+    <script>
+    // Function to view modals
+    function openModal(title, imagePath, content) {
+        $('#modalTitle').text(title);
+        
+        var imageHtml = `<img src="${imagePath}" alt="${title}" style="max-width: 100%; height: auto; display: block; margin: auto; ">`;
+        var contentHtml = `<p style="text-align: justify; padding: 10px">${content}</p>`;
+
+        $('#modalContent').html(imageHtml + '<br>' + contentHtml);
+    }
+    </script>
+
 
 </body>
 </html>
