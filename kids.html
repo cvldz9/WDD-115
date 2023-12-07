@@ -270,5 +270,32 @@
         }
     </script>
 
+    <script>
+        // Function to append the toaster
+        const appendToaster = (message) => {
+            const toastContainer = document.getElementById('liveToast');
+            const toastBody = toastContainer.querySelector('.toast-body');
+            toastBody.textContent = message;
+
+            // Initialize the toast after updating the content
+            const toastBootstrap = new bootstrap.Toast(toastContainer);
+            toastBootstrap.show();
+        };
+
+        // Event listeners for the heart icons in each card
+        const favoriteIcons = document.querySelectorAll('.favorite-icon');
+
+        favoriteIcons.forEach((icon, index) => {
+            icon.addEventListener('click', () => {
+                // Toggle the class to change the color of the heart icon
+                icon.classList.toggle('red-heart');
+
+                // Logic to handle the click on the heart icon
+                // Show the toaster or perform other actions
+                appendToaster(`Great news! Book ${index + 1} has been added to your favorite books.`);
+            });
+        });
+    </script>
+
 </body>
 </html>
