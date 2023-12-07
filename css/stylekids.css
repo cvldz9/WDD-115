@@ -98,45 +98,46 @@ body {
     font-weight: bold;
     text-align: center;
 }
-.nav{
-    flex: 1;
-    text-align: center;
+.nav-c{
+  flex: 1;
+  text-align: center;
 }
 
-.nav ul li{
-    list-style: none;
-    display: inline-block;
-    /* margin-right: 200px; */
+.nav-c ul li{
+  list-style: none;
+  display: inline-block;
+  /* margin-right: 200px; */
 }
 
-.nav ul li img {
-    float: none;
+.nav-c ul li img {
+  float: none;
 }
 
 ul {
-    padding-inline-start: 0px;
+  padding-inline-start: 0px;
 }
 .icon {
-    width: 25px;
-    height: 25px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    cursor: pointer;
-    background-size: auto;
+  width: 40px;
+  height: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  background-size: auto;
 }
 
 .icon:hover {
-    /* background-color:antiquewhite; */
-    background-color: #547cf1;
-    width: 25px;
-    background-size: fill;
-    border: #f4f4f4 1px solid;
-    border-radius: 50px;
+  /* background-color:antiquewhite; */
+  background-color: #547cf1;
+  width: 40px;
+  background-size: fill;
+  border: #f4f4f4 1px solid;
+  border-radius: 50px;
 }
+
 
 /* -----------IMAGES CLASSES-------------- */
 .row1 {
