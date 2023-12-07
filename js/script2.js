@@ -45,3 +45,11 @@ document.getElementById('yourEmail').addEventListener('click', enterEmailAndSubs
 
 // Attach the download function to the button click event
 document.getElementById('readStory').addEventListener('click', readMemberStories);
+
+// Function to view modals
+function openModal(title, imagePath, content) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalContent').innerHTML = `<img src="${imagePath}" alt="${title}" style="max-width: 100%; height: auto; display: block; margin: auto; ">`;
+    document.getElementById('modalContent').innerHTML += `<br>`;
+    document.getElementById('modalContent').innerHTML += `<p style="text-align: justify; padding: 10px">${content}</p>`;
+}
