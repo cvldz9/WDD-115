@@ -94,7 +94,8 @@ body {
   }
 
 /*----------EXPLORE OUR COLLECTIONS----------*/
-.collection-heading {
+.collection-heading,
+.books-card {
   text-align: center;
   font-size: 30px;
   color: black;
@@ -157,11 +158,12 @@ p a:hover {
 
 
 /*----------FAQs----------*/
-.explore {
+.faqs {
   font-size: 30px;
   color: #313131;
   font-weight: bold;
   text-align: center;
+  padding: 50px 0px 20px 0px;
 }
 
 
