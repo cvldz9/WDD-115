@@ -93,7 +93,7 @@ body {
     color: white;
   }
 
-/*----------COLLECTIONS----------*/
+/*----------EXPLORE OUR COLLECTIONS----------*/
 .collection-heading {
   text-align: center;
   font-size: 30px;
@@ -157,7 +157,7 @@ p a:hover {
 
 
 /*----------FAQs----------*/
-.faqs {
+.explore {
   font-size: 30px;
   color: #313131;
   font-weight: bold;
