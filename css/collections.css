@@ -156,6 +156,15 @@ p a:hover {
 
 
 
+/*----------FAQs----------*/
+.faqs {
+  font-size: 30px;
+  color: #313131;
+  font-weight: bold;
+  text-align: center;
+}
+
+
 /*----------FOOTER----------*/
 .info-footer {
     display: block;
