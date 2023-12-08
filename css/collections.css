@@ -94,8 +94,7 @@ body {
   }
 
 /*----------EXPLORE OUR COLLECTIONS----------*/
-.collection-heading,
-.books-card {
+.collection-heading {
   text-align: center;
   font-size: 30px;
   color: black;
@@ -151,8 +150,15 @@ p a:hover {
 .collections-container {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Adjust the value based on the space you want between cards */
-  padding: 20px;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.books-card {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  padding: 0px 0px 0px 0px;
 }
 
 
