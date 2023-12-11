@@ -56,6 +56,7 @@
             </div>
             <!-------------------------EXPLORE OUR COLLECTIONS----------------------------->
             <div>
+                
                 <h1 class="collection-heading">Explore our collections</h1>
                 <div class="button-container"><!-- CATEGORIES BUTTON -->
                     <button type="button" class="btn btn-outline-primary" onclick="showAlert('Mystery')">Mystery</button>
@@ -68,33 +69,42 @@
                     <button type="button" class="btn btn-outline-dark" onclick="showAlert('Crime')">Crime</button>
                 </div>
 
+                <style>
+                    .custom-alert {
+                        position: fixed;
+                        top: 10px;
+                        right: 10px;
+                        z-index: 1000;
+                    }
+                </style>
 
                 <div id="liveAlertPlaceholder"></div>
                 <script>
                     const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
 
                     const showAlert = (category) => {
-                    const message = `You selected: ${category}`;
-                    appendAlert(message, 'success');
+                        const message = "This category is under construction. We will let you know when it is up and ready!";
+                        appendAlert(message, 'warning');
                     };
 
                     const appendAlert = (message, type) => {
-                    const wrapper = document.createElement('div');
-                    wrapper.classList.add('alert', `alert-${type}`, 'alert-dismissible', 'custom-alert');
-                    wrapper.innerHTML = [
-                        `<div>${message}</div>`,
-                        '   <button type="button" class="close" data-dismiss="alert" aria-label="Close">',
-                        '      <span aria-hidden="true">&times;</span>',
-                        '   </button>',
-                    ].join('');
+                        const wrapper = document.createElement('div');
+                        wrapper.classList.add('alert', `alert-${type}`, 'alert-dismissible', 'custom-alert', 'fade', 'show');
+                        wrapper.innerHTML = [
+                            `<div>${message}</div>`,
+                            '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                        ].join('');
 
-                    alertPlaceholder.innerHTML = ''; // Clear previous alerts
-                    alertPlaceholder.appendChild(wrapper); // Append the alert to the container
+                        alertPlaceholder.innerHTML = ''; // Clear previous alerts
+                        alertPlaceholder.appendChild(wrapper); // Append the alert to the container
 
-                    // Triggering reflow so the animation will work on subsequent alerts
-                    wrapper.offsetHeight;
+                        // Bootstrap alert initialization
+                        new bootstrap.Alert(wrapper);
 
-                    wrapper.classList.add('show'); // Apply show class for smooth transition
+                        // Remove the alert from the DOM after it's closed
+                        wrapper.addEventListener('closed.bs.alert', () => {
+                            alertPlaceholder.removeChild(wrapper);
+                        });
                     };
                 </script>
 
@@ -102,13 +112,8 @@
                 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
+    
                 
-
-
-
- 
- 
-
                 <!-------------------------BOOK COLLECTIONS----------------------------->
                 <p style="align-items: center;">
                     <div class="row">
