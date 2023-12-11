@@ -159,7 +159,7 @@
                         <div class="card-body">
                           <h5 class="card-title">Catcher In The Rye</h5>
                           <p class="card-text">J.D. Salinger</p>
-                          <a href="#" class="btn btn-primary">View</a>
+                          <a href="#" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas2">View</a>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
@@ -167,7 +167,7 @@
                         <div class="card-body">
                           <h5 class="card-title">Will Grayson, Will Grayson</h5>
                           <p class="card-text">John Green & David Leuithan</p>
-                          <a href="#" class="btn btn-primary">View</a>
+                          <a href="#" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas3">View</a>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
@@ -175,7 +175,7 @@
                         <div class="card-body">
                           <h5 class="card-title">Why We Took The Car</h5>
                           <p class="card-text">Wolfgang Herrndorf</p>
-                          <a href="#" class="btn btn-primary">View</a>
+                          <a href="#" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas4">View</a>
                         </div>
                     </div>
                     <!-- Modal -->
@@ -198,21 +198,41 @@
                     <!-- OFFCANVAS ELEMENTS -->
 <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvas1" aria-labelledby="offcanvas1Label">
     <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvas1Label">Book 1 Synopsis</h5>
+        <h5 class="offcanvas-title" id="offcanvas1Label">Backdrop with Scrolling</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-        <p>This is the synopsis for "They Both Die At The End."</p>
+        <p>Try scrolling the rest of the page to see this option in action.</p>
     </div>
 </div>
 
-<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvas2" aria-labelledby="offcanvas2Label">
+<div class="offcanvas offcanvas-start show text-bg-dark" tabindex="-1" id="offcanvas2" aria-labelledby="offcanvas2Label">
     <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvas2Label">Book 2 Synopsis</h5>
+        <h5 class="offcanvas-title" id="offcanvas2Label">Offcanvas</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas2" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p>Place offcanvas content here.</p>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvas3" aria-labelledby="offcanva3Label">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvas3Label">Book 3 Synopsis</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-        <p>This is the synopsis for "Catcher In The Rye."</p>
+        <p>Insert synopsis.</p>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvas4" aria-labelledby="offcanvas4Label">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvas4Label">Book 4 Synopsis</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p>Insert synopsis.</p>
     </div>
 </div>
 
