@@ -47,61 +47,49 @@
             <div>
                 
                 <h1 class="collection-heading">Explore our collections</h1>
-    <div class="button-container"><!-- CATEGORIES BUTTON -->
-        <button type="button" class="btn btn-outline-primary" onclick="showAlert('Mystery')">Mystery</button>
-        <button type="button" class="btn btn-outline-secondary" onclick="showAlert('Young Adult')">Young Adult</button>
-        <button type="button" class="btn btn-outline-success" onclick="showAlert('Fiction')">Fiction</button>
-        <button type="button" class="btn btn-outline-danger" onclick="showAlert('Contemporary')">Contemporary</button>
-        <button type="button" class="btn btn-outline-warning" onclick="showAlert('Mystery Thriller')">Mystery Thriller</button>
-        <button type="button" class="btn btn-outline-info" onclick="showAlert('Romance')">Romance</button>
-        <button type="button" class="btn btn-outline-light" onclick="showAlert('Thriller')">Thriller</button>
-        <button type="button" class="btn btn-outline-dark" onclick="showAlert('Crime')">Crime</button>
-    </div>
+                <div class="button-container"><!-- CATEGORIES BUTTON -->
+                    <button type="button" class="btn btn-outline-primary" onclick="showAlert('Mystery')">Mystery</button>
+                    <button type="button" class="btn btn-outline-secondary" onclick="showAlert('Young Adult')">Young Adult</button>
+                    <button type="button" class="btn btn-outline-success" onclick="showAlert('Fiction')">Fiction</button>
+                    <button type="button" class="btn btn-outline-danger" onclick="showAlert('Contemporary')">Contemporary</button>
+                    <button type="button" class="btn btn-outline-warning" onclick="showAlert('Mystery Thriller')">Mystery Thriller</button>
+                    <button type="button" class="btn btn-outline-info" onclick="showAlert('Romance')">Romance</button>
+                    <button type="button" class="btn btn-outline-light" onclick="showAlert('Thriller')">Thriller</button>
+                    <button type="button" class="btn btn-outline-dark" onclick="showAlert('Crime')">Crime</button>
+                </div>
 
-    <style>
-        .custom-alert {
-            max-width: 600px; /* Set the desired maximum width for the alert */
-    width: 100%; /* Make the alert take up the full width within its container */
+                <div id="liveAlertPlaceholder" class="custom-alert-container"></div>
+                <script>
+                    const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
+                    const showAlert = (category) => {
+                        const message = "This category is under construction. We will let you know when it is up and ready!";
+                        appendAlert(message, 'warning');
+                    };
+                    const appendAlert = (message, type) => {
+                        const wrapper = document.createElement('div');
+                        wrapper.classList.add('custom-alert', 'alert', `alert-${type}`, 'alert-dismissible', 'fade', 'show');
+                        wrapper.innerHTML = [
+                            `<div>${message}</div>`,
+                            '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                        ].join('');
 
-        }
+                        alertPlaceholder.innerHTML = ''; // Clear previous alerts
+                        alertPlaceholder.appendChild(wrapper); // Append the alert to the container
 
-    </style>
+                        // Bootstrap alert initialization
+                        new bootstrap.Alert(wrapper);
 
-    <div id="liveAlertPlaceholder" class="custom-alert-container"></div>
+                        // Remove the alert from the DOM after it's closed
+                        wrapper.addEventListener('closed.bs.alert', () => {
+                            alertPlaceholder.removeChild(wrapper);
+                        });
+                    };
+                </script>
 
-    <script>
-        const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
-
-        const showAlert = (category) => {
-            const message = "This category is under construction. We will let you know when it is up and ready!";
-            appendAlert(message, 'warning');
-        };
-
-        const appendAlert = (message, type) => {
-            const wrapper = document.createElement('div');
-            wrapper.classList.add('custom-alert', 'alert', `alert-${type}`, 'alert-dismissible', 'fade', 'show');
-            wrapper.innerHTML = [
-                `<div>${message}</div>`,
-                '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-            ].join('');
-
-            alertPlaceholder.innerHTML = ''; // Clear previous alerts
-            alertPlaceholder.appendChild(wrapper); // Append the alert to the container
-
-            // Bootstrap alert initialization
-            new bootstrap.Alert(wrapper);
-
-            // Remove the alert from the DOM after it's closed
-            wrapper.addEventListener('closed.bs.alert', () => {
-                alertPlaceholder.removeChild(wrapper);
-            });
-        };
-    </script>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 
     
@@ -161,9 +149,9 @@
                     <div class="card" style="width: 18rem;">
                         <img src="/assets/images/collections/book5.jpeg" class="card-img-top" alt="book1">
                         <div class="card-body">
-                          <h5 class="card-title">They Both Die At The End</h5>
-                          <p class="card-text">Adam Silvera</p>
-                          <a href="#" class="btn btn-primary">View</a>
+                            <h5 class="card-title">They Both Die At The End</h5>
+                            <p class="card-text">Adam Silvera</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas1">View</a>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
@@ -207,6 +195,27 @@
                         </div>
                         </div>
                     </div>
+                    <!-- OFFCANVAS ELEMENTS -->
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvas1" aria-labelledby="offcanvas1Label">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvas1Label">Book 1 Synopsis</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p>This is the synopsis for "They Both Die At The End."</p>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvas2" aria-labelledby="offcanvas2Label">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvas2Label">Book 2 Synopsis</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p>This is the synopsis for "Catcher In The Rye."</p>
+    </div>
+</div>
+
                 </div>
             </div>
 
