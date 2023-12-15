@@ -184,4 +184,13 @@ $(document).ready(function () {
     var slideIndex = parseInt($(this).attr("data-slide-index"));
     showSlide(slideIndex);
   });
+
+  // Use mousemove event to change the arrows background
+  $("#leftArrow").on("mousemove", function () {
+    $(this).css("background-color", "white");
+  });
+
+  $("#rightArrow").on("mousemove", function () {
+    $(this).css("background-color", "white");
+  });
 });
