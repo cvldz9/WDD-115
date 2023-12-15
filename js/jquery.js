@@ -207,4 +207,30 @@ $(document).ready(function () {
 
   // Select the featured book description box
   var featuredBookDescriptionBox = $(".ftrbook-box:nth-of-type(3)");
+
+  // Add some padding to the title box
+  featuredBookTitleBox.css("padding", "20px");
+
+  // Adjust the image box by adding some margin and a grid column.
+  featuredBookImageBox.css({
+    margin: "0 auto",
+    "border-radius": "20px",
+    "grid-column": "1 / 4",
+  });
+
+  // Style the description box
+  featuredBookDescriptionBox.css({
+    padding: "20px",
+    "border-radius": "20px",
+    "box-shadow": "5px 5px 20px rgba(0, 0, 0, 0.2)",
+    "grid-column": "4 / 10",
+    "grid-row": "2 / 3",
+  });
+
+  // Style the categories links by changing their color
+  var categoryLinks = featuredBookDescriptionBox.find("a");
+  categoryLinks.css({
+    color: "rgb(144, 144, 144)",
+    "text-decoration": "none",
+  });
 });
