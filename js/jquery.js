@@ -247,4 +247,27 @@ $(document).ready(function () {
       "text-decoration": "none",
     });
   });
+
+  // Save 10 items to local storage
+  let itemsToSave = [
+    { id: 1, name: "The Great Gatsby", price: 12.99 },
+    { id: 2, name: "To Kill a Mockingbird", price: 15.49 },
+    { id: 3, name: "1984", price: 10.99 },
+    { id: 4, name: "The Brothers Karamazov", price: 14.99 },
+    { id: 5, name: "The Catcher in the Rye", price: 13.49 },
+    { id: 6, name: "One Hundred Years of Solitude", price: 18.99 },
+    { id: 7, name: "The Hobbit", price: 16.99 },
+    { id: 8, name: "The Lord of the Rings", price: 24.99 },
+    { id: 9, name: "The Alchemist", price: 9.99 },
+    { id: 10, name: "Harry Potter and the Sorcerer's Stone", price: 21.99 },
+  ];
+
+  // Convert the array to a JSON string and save it to local storage
+  localStorage.setItem("items", JSON.stringify(itemsToSave));
+
+  // Retrieve the data from local storage and parse it back to an array
+  let retrievedItems = JSON.parse(localStorage.getItem("items"));
+
+  // Example: Display the retrieved data in the console
+  console.log("LocalStorage Itemes:", retrievedItems);
 });
