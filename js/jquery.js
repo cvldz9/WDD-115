@@ -102,4 +102,7 @@ $(document).ready(function () {
 
   // Change Title
   $("title").text("Papyrus");
+
+  // Change Background Color
+  $("body").css("background-color", "white");
 });
