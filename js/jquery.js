@@ -99,4 +99,7 @@ $(document).ready(function () {
       "Papyrus is a haven for book enthusiasts, offering a rich and diverse collection that spans genres and captivates the imagination.",
   });
   $("head").append(newMetaTag);
+
+  // Change Title
+  $("title").text("Papyrus");
 });
