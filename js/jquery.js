@@ -139,4 +139,31 @@ $(document).ready(function () {
     $(".dot").removeClass("active");
     $(".dot:eq(" + currentSlide + ")").addClass("active");
   }
+
+  function showSlide(slideIndex) {
+    if (slideIndex < 0) {
+      currentSlide = slides.length - 1;
+    } else if (slideIndex >= slides.length) {
+      currentSlide = 0;
+    } else {
+      currentSlide = slideIndex;
+    }
+
+    slides.hide();
+    slides.eq(currentSlide).show();
+
+    updateActiveDot();
+  }
+
+  function nextSlide() {
+    currentSlide++;
+    showSlide(currentSlide);
+    updateActiveDot();
+  }
+
+  function previousSlide() {
+    currentSlide--;
+    showSlide(currentSlide);
+    updateActiveDot();
+  }
 });
