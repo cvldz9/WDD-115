@@ -552,10 +552,21 @@
   <script src="./js/script.js"></script>
 
   <script>
+    //animate cards in Join the Club
     $(".card-animate").mouseenter(function() {
         $(this).addClass('animate__animated animate__shakeY');
         }).mouseleave(function() {
             $(this).removeClass('animate__animated animate__shakeY');
+        });
+
+    //animate Read our members stories button
+    $("#readStory").click(function() {
+        $(this).toggleClass('animate__animated animate__jackInTheBox');
+        });
+
+    //animate Subscribe to our newsletters button
+    $("#yourEmail").click(function() {
+        $(this).toggleClass('animate__animated animate__shakeX');
         });
   </script>
 
