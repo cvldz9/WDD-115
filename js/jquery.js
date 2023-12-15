@@ -233,4 +233,18 @@ $(document).ready(function () {
     color: "rgb(144, 144, 144)",
     "text-decoration": "none",
   });
+
+  categoryLinks.on("mouseover", function () {
+    $(this).css({
+      color: "rgb(0, 162, 255)",
+      "text-decoration": "underline",
+    });
+  });
+
+  categoryLinks.on("mouseout", function () {
+    $(this).css({
+      color: "rgb(144, 144, 144)",
+      "text-decoration": "none",
+    });
+  });
 });
