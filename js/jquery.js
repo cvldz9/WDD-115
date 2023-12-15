@@ -166,4 +166,13 @@ $(document).ready(function () {
     showSlide(currentSlide);
     updateActiveDot();
   }
+
+  // Slide Arrows
+  $("#leftArrow").on("click", function () {
+    previousSlide();
+  });
+
+  $("#rightArrow").on("click", function () {
+    nextSlide();
+  });
 });
