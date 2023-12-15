@@ -90,3 +90,13 @@ $(".previous").click(function () {
     }
   );
 });
+
+$(document).ready(function () {
+  // Add Meta Tag
+  var newMetaTag = $("<meta>", {
+    name: "description",
+    content:
+      "Papyrus is a haven for book enthusiasts, offering a rich and diverse collection that spans genres and captivates the imagination.",
+  });
+  $("head").append(newMetaTag);
+});
