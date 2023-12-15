@@ -105,4 +105,7 @@ $(document).ready(function () {
 
   // Change Background Color
   $("body").css("background-color", "white");
+
+  // Change the Color of All Links
+  $("a").css("color", "black");
 });
