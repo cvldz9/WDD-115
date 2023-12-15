@@ -193,4 +193,9 @@ $(document).ready(function () {
   $("#rightArrow").on("mousemove", function () {
     $(this).css("background-color", "white");
   });
+
+  // Restore the default background color when the mouse leaves the arrows
+  $("#leftArrow, #rightArrow").on("mouseout", function () {
+    $(this).css("background-color", "rgba(243, 240, 240, 0.7)");
+  });
 });
