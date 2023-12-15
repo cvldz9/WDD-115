@@ -130,4 +130,13 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  var slides = $(".slide");
+  var currentSlide = 0;
+
+  // Update the active dot when changing slides
+  function updateActiveDot() {
+    $(".dot").removeClass("active");
+    $(".dot:eq(" + currentSlide + ")").addClass("active");
+  }
 });
