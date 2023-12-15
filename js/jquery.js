@@ -198,4 +198,13 @@ $(document).ready(function () {
   $("#leftArrow, #rightArrow").on("mouseout", function () {
     $(this).css("background-color", "rgba(243, 240, 240, 0.7)");
   });
+
+  // Select the featured book title box
+  var featuredBookTitleBox = $(".ftrbook-box:nth-of-type(1)");
+
+  // Select the featured book image box
+  var featuredBookImageBox = $(".ftrbook-box:nth-of-type(2)");
+
+  // Select the featured book description box
+  var featuredBookDescriptionBox = $(".ftrbook-box:nth-of-type(3)");
 });
