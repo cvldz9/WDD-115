@@ -552,6 +552,11 @@
   <script src="./js/script.js"></script>
 
   <script>
+    //animate Free Download button
+    $(".download_button").click(function() {
+        $(this).toggleClass('animate__animated animate__tada');
+        });
+
     //animate cards in Join the Club
     $(".card-animate").mouseenter(function() {
         $(this).addClass('animate__animated animate__shakeY');
