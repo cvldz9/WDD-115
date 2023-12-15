@@ -178,4 +178,10 @@ $(document).ready(function () {
 
   // Automatically advance to the next slide every 3 seconds.
   setInterval(nextSlide, 3500);
+
+  // Select all navigation dots
+  $(".dot").on("mouseover", function (e) {
+    var slideIndex = parseInt($(this).attr("data-slide-index"));
+    showSlide(slideIndex);
+  });
 });
