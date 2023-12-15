@@ -175,4 +175,7 @@ $(document).ready(function () {
   $("#rightArrow").on("click", function () {
     nextSlide();
   });
+
+  // Automatically advance to the next slide every 3 seconds.
+  setInterval(nextSlide, 3500);
 });
