@@ -55,7 +55,7 @@
   align-items: left;
   width: 1665px;
   height: 800px;
-  background-image: url('/assets/images/hero/Hero-bg.png');
+  background-image: url('./assets/images/hero/Hero-bg.png');
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
